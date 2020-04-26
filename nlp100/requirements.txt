@@ -1,0 +1,6 @@
+pandas
+plotly
+autopep8
+mypy
+pytest
+tqdm

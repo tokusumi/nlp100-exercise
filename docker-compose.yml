@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nlp100:
+    build: ./nlp100
+    container_name: nlp100
+    command: jupyter notebook --ip=0.0.0.0 --allow-root
+    ports:
+      - 8888:8888
+    volumes:
+      - ./nlp100:/notebooks
+      - ./jupyter_notebook_config.json:/root/.jupyter/jupyter_notebook_config.json
+    tty: true
